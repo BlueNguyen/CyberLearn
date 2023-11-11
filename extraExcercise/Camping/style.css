@@ -2,11 +2,24 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 1340px;
+  margin: auto;
+}
+.clear{
+  clear: both;
 }
 
+body{
+  background-color: #faf4f2;
+}
 /* HEADER */
 .header ul {
   list-style: none;
+  /* ul là block nên thoải mái margin */
+  margin-top: 10px;
 }
 .header a {
   text-decoration: none;
@@ -19,4 +32,71 @@
 .header {
   background-color: #f8e1db;
   padding: 10px 0;
+}
+/* CAROUSEL */
+.carousel{
+  background-image: url(./Image/BG.png);
+  /* chỉ thêm khi thẻ kg có height */
+  height: 700px;
+  background-position: center;
+  background-size: cover;
+}
+/* ACTIVITIES */
+.activities{
+  padding: 70px 0;
+  text-align: center;
+}
+.activities__item{
+  float: left;
+  width: 25%;
+
+  padding: 0 20px;
+}
+
+.activities__bg{
+  background-color: white;
+  padding: 25px;
+  border-radius: 20px;
+}
+.activities__img img{
+  /* responsive cho image */
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+}
+.activities__button{
+  margin-top: 20px;
+  
+}
+.activities__button button{
+  padding: 10px 40px;
+  border: 1px solid red;
+  /* background-color: #faf4f2; */
+  background-color: transparent;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.activities__img{
+  color: red;
+  font-size: 20px;
+}
+.activities__icon{
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: yellow ;
+  line-height: 45px;
+
+  /* canh giữa theo chiều ngang text-align: center*/
+  /* canh theo chiều dọc(nó chỉ đúng khi chỉ có 1 hàng) line-height(khoảng cách giữa các hàng chữ với nhau): 95px */
+  
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  background-color: rgba(255, 255, 0, 0.5);
+  /* opacity: 0.5; trong suốt thẻ thì ND con cũng trong suốt */
+}
+.activities__img{
+  position: relative;
 }
